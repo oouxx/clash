@@ -10,8 +10,8 @@ import (
 
 	"github.com/Dreamacro/clash/component/vmess"
 	"github.com/gofrs/uuid"
-	"github.com/golang/protobuf/proto"
 	xtls "github.com/xtls/go"
+	"google.golang.org/protobuf/proto"
 )
 
 type Conn struct {
