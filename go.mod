@@ -8,7 +8,7 @@ require (
 	github.com/go-chi/cors v1.2.0
 	github.com/go-chi/render v1.0.1
 	github.com/gofrs/uuid v4.0.0+incompatible
-	github.com/golang/protobuf v1.5.2
+	github.com/golang/protobuf v1.4.0
 	github.com/gorilla/websocket v1.4.2
 	github.com/miekg/dns v1.1.42
 	github.com/oschwald/geoip2-golang v1.5.0
@@ -20,5 +20,6 @@ require (
 	golang.org/x/net v0.0.0-20210508051633-16afe75a6701
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.0.0-20210507161434-a76c4d0a0096
+	google.golang.org/protobuf v1.21.0
 	gopkg.in/yaml.v2 v2.4.0
 )
