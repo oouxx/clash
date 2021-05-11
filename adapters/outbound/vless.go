@@ -1,7 +1,6 @@
 package outbound
 
 import (
-	"bytes"
 	"context"
 	"crypto/tls"
 	"encoding/binary"
@@ -24,8 +23,6 @@ const (
 	// max packet length
 	maxLength = 8192
 )
-
-var bufPool = sync.Pool{New: func() interface{} { return &bytes.Buffer{} }}
 
 type Vless struct {
 	*Base
@@ -79,7 +76,7 @@ func (v *Vless) StreamConn(c net.Conn, metadata *C.Metadata) (net.Conn, error) {
 		if v.option.TLS {
 			host, _, _ := net.SplitHostPort(v.addr)
 
-			if v.option.Flow == vless.XRO || v.option.Flow == vless.XRD {
+			if v.option.Flow == vless.XRO || v.option.Flow == vless.XRD || v.option.Flow == vless.XRS {
 				xtlsConfig := &xtls.Config{
 					ServerName:         host,
 					InsecureSkipVerify: v.option.SkipCertVerify,
@@ -161,7 +158,7 @@ func NewVless(option VlessOption) (*Vless, error) {
 	var addons *vless.Addons
 	if option.TLS && option.Network != "ws" && option.Flow != "" {
 		switch option.Flow {
-		case vless.XRO, vless.XRD:
+		case vless.XRO, vless.XRD, vless.XRS:
 			addons = &vless.Addons{
 				Flow: option.Flow,
 			}

@@ -10,6 +10,7 @@ import (
 const (
 	XRO          = "xtls-rprx-origin"
 	XRD          = "xtls-rprx-direct"
+	XRS          = "xtls-rprx-splice"
 	Version byte = 0 // protocol version. preview version is 0
 )
 
