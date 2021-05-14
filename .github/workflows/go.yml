@@ -37,11 +37,11 @@ jobs:
             ${{ runner.os }}-go-
 
       - name: Get dependencies, run test and static check
-        run: |
-          go test ./...
-          go vet ./...
-          go install honnef.co/go/tools/cmd/staticcheck@latest
-          staticcheck -- $(go list ./...)
+        #run: |
+          #go test ./...
+          #go vet ./...
+          #go install honnef.co/go/tools/cmd/staticcheck@latest
+          #staticcheck -- $(go list ./...)
 
       - name: Build
         #if: startsWith(github.ref, 'refs/tags/')
