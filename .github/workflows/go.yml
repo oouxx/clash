@@ -45,6 +45,7 @@ jobs:
         env:
           NAME: clash
           BINDIR: bin
+          UPX: upx
         run: make -j releases
 
       - name: Upload Release
