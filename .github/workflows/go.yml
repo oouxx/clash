@@ -3,7 +3,7 @@ on:
   #release:
   #  types: [published]
   push:
-    branches: [ master ]
+  #  branches: [ master ]
   #  tags:
   #  - 'v*'
   
@@ -39,7 +39,7 @@ jobs:
 
 
       - name: Build
-        #if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/')
         env:
           NAME: clash
           BINDIR: bin
@@ -47,7 +47,7 @@ jobs:
 
       - name: Upload Release
         uses: softprops/action-gh-release@v1
-        #if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/')
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
