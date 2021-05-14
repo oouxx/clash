@@ -9,28 +9,28 @@ GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-X "github.com/Dreamacro/clas
 		-w -s -buildid='
 
 PLATFORM_LIST = \
-	darwin-amd64 \
-	darwin-arm64 \
-	linux-386 \
-	linux-amd64 \
-	linux-armv5 \
-	linux-armv6 \
+	#darwin-amd64 \
+	#darwin-arm64 \
+	#linux-386 \
+	#linux-amd64 \
+	#linux-armv5 \
+	#linux-armv6 \
 	linux-armv7 \
-	linux-armv8 \
-	linux-mips-softfloat \
-	linux-mips-hardfloat \
-	linux-mipsle-softfloat \
-	linux-mipsle-hardfloat \
-	linux-mips64 \
-	linux-mips64le \
-	freebsd-386 \
-	freebsd-amd64 \
-	freebsd-arm64
+	#linux-armv8 \
+	#linux-mips-softfloat \
+	#linux-mips-hardfloat \
+	#linux-mipsle-softfloat \
+	#linux-mipsle-hardfloat \
+	#linux-mips64 \
+	#linux-mips64le \
+	#freebsd-386 \
+	#freebsd-amd64 \
+	#freebsd-arm64
 
 WINDOWS_ARCH_LIST = \
-	windows-386 \
-	windows-amd64 \
-	windows-arm32v7
+	#windows-386 \
+	#windows-amd64 \
+	#windows-arm32v7
 
 all: linux-amd64 darwin-amd64 windows-amd64 # Most used
 
