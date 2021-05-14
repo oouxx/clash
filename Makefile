@@ -9,13 +9,14 @@ GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-X "github.com/Dreamacro/clas
 		-w -s -buildid='
 
 PLATFORM_LIST = \
+	linux-armv7
 	#darwin-amd64 \
 	#darwin-arm64 \
 	#linux-386 \
 	#linux-amd64 \
 	#linux-armv5 \
 	#linux-armv6 \
-	linux-armv7 \
+	
 	#linux-armv8 \
 	#linux-mips-softfloat \
 	#linux-mips-hardfloat \
