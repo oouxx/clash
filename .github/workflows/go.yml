@@ -15,7 +15,13 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: 1.16
-
+      - name: upx install
+        run: |
+          wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-amd64_linux.tar.xz
+          tar xf upx-3.96-amd64_linux.tar.xz
+          mv upx-3.96-amd64_linux/upx .
+          rm -rf upx-3.96-amd64_linux*
+          
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
 
