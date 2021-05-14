@@ -23,6 +23,7 @@ jobs:
           tar xf upx-3.96-amd64_linux.tar.xz
           mv upx-3.96-amd64_linux/upx .
           rm -rf upx-3.96-amd64_linux*
+          ls
           
       - name: Check out code into the Go module directory
         uses: actions/checkout@v2
