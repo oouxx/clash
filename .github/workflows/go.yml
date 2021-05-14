@@ -1,10 +1,11 @@
 name: Go
 on:
-  release:
-    types: [published]
+  #release:
+  #  types: [published]
   push:
     tags:
     - 'v*'
+  
 jobs:
 
   build:
