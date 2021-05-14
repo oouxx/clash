@@ -1,5 +1,4 @@
-BASE=$(dirname $(readlink -f "$0"))
-UPX=$BASE/upx
+UPX=$UPX/upx
 
 NAME=clash
 BINDIR=bin
