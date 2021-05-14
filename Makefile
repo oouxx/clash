@@ -1,3 +1,6 @@
+BASE=$(dirname $(readlink -f "$0"))
+UPX=$BASE/upx
+
 NAME=clash
 BINDIR=bin
 VERSION=$(shell git describe --tags || echo "unknown version")
@@ -103,6 +106,7 @@ $(gz_releases): %.gz : %
 	gzip -f -S -$(VERSION).gz $(BINDIR)/$(NAME)-$(basename $@)
 
 $(zip_releases): %.zip : %
+	$UPX --best --lzma $(BINDIR)/$(NAME)-$(basename $@).exe
 	zip -m -j $(BINDIR)/$(NAME)-$(basename $@)-$(VERSION).zip $(BINDIR)/$(NAME)-$(basename $@).exe
 
 all-arch: $(PLATFORM_LIST) $(WINDOWS_ARCH_LIST)
