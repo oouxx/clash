@@ -1,4 +1,4 @@
-UPX=$(UPX)/upx
+UPX=upx
 
 NAME=clash
 BINDIR=bin
