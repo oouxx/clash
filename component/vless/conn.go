@@ -2,11 +2,14 @@ package vless
 
 import (
 	"bytes"
+	"crypto/hmac"
+	"crypto/md5"
 	"encoding/binary"
 	"errors"
 	"io"
 	"io/ioutil"
 	"net"
+	"time"
 
 	"github.com/Dreamacro/clash/component/vmess"
 	"github.com/gofrs/uuid"
@@ -35,6 +38,13 @@ func (vc *Conn) Read(b []byte) (int, error) {
 }
 
 func (vc *Conn) sendRequest() error {
+	timestamp := time.Now()
+
+	h := hmac.New(md5.New, vc.id.Bytes())
+	binary.Write(h, binary.BigEndian, uint64(timestamp.Unix()))
+	mbuf := &bytes.Buffer{}
+	mbuf.Write(h.Sum(nil))
+
 	buf := &bytes.Buffer{}
 
 	buf.WriteByte(Version)   // protocol version
@@ -63,6 +73,8 @@ func (vc *Conn) sendRequest() error {
 	buf.WriteByte(vc.dst.AddrType)
 	buf.Write(vc.dst.Addr)
 
+	//mbuf.Write(buf.Bytes())
+	//_, err := vc.Conn.Write(mbuf.Bytes())
 	_, err := vc.Conn.Write(buf.Bytes())
 	return err
 }
