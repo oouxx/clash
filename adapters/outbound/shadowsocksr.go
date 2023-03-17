@@ -7,10 +7,10 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/Dreamacro/clash/component/dialer"
-	"github.com/Dreamacro/clash/component/ssr/obfs"
-	"github.com/Dreamacro/clash/component/ssr/protocol"
-	C "github.com/Dreamacro/clash/constant"
+	"github.com/oouxx/clash/component/dialer"
+	"github.com/oouxx/clash/component/ssr/obfs"
+	"github.com/oouxx/clash/component/ssr/protocol"
+	C "github.com/oouxx/clash/constant"
 
 	"github.com/Dreamacro/go-shadowsocks2/core"
 	"github.com/Dreamacro/go-shadowsocks2/shadowaead"

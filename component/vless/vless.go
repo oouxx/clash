@@ -3,8 +3,8 @@ package vless
 import (
 	"net"
 
-	"github.com/Dreamacro/clash/component/vmess"
 	"github.com/gofrs/uuid"
+	"github.com/oouxx/clash/component/vmess"
 )
 
 const (

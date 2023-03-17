@@ -14,7 +14,7 @@ assignees: ''
 - [ ] 如果你可以自己 debug 并解决的话，提交 PR 吧！
 - [ ] 我已经在 [Issue Tracker](……/) 中找过我要提出的问题
 - [ ] 我已经使用 dev 分支版本测试过，问题依旧存在
-- [ ] 我已经仔细看过 [Documentation](https://github.com/Dreamacro/clash/wiki/) 并无法自行解决问题
+- [ ] 我已经仔细看过 [Documentation](https://github.com/oouxx/clash/wiki/) 并无法自行解决问题
 - [ ] 这是 Clash 核心的问题，并非我所使用的 Clash 衍生版本（如 OpenClash、KoolClash 等）的特定问题
 
 请注意，如果你并没有遵照这个 issue template 填写内容，我们将直接关闭这个 issue。
@@ -25,7 +25,7 @@ But before so, please do the following checklist:
 - [ ] Is this something you can **debug and fix**? Send a pull request! Bug fixes and documentation fixes are welcome.
 - [ ] I have searched on the [issue tracker](……/) for a related issue.
 - [ ] I have tested using the dev branch, and the issue still exists.
-- [ ] I have read the [documentation](https://github.com/Dreamacro/clash/wiki/) and was unable to solve the issue
+- [ ] I have read the [documentation](https://github.com/oouxx/clash/wiki/) and was unable to solve the issue
 - [ ] This is an issue of the Clash core *per se*, not to the derivatives of Clash, like OpenClash or KoolClash
 
 Please understand that we close issues that fail to follow this issue template.

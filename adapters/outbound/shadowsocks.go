@@ -8,12 +8,12 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/Dreamacro/clash/common/structure"
-	"github.com/Dreamacro/clash/component/dialer"
-	obfs "github.com/Dreamacro/clash/component/simple-obfs"
-	"github.com/Dreamacro/clash/component/socks5"
-	v2rayObfs "github.com/Dreamacro/clash/component/v2ray-plugin"
-	C "github.com/Dreamacro/clash/constant"
+	"github.com/oouxx/clash/common/structure"
+	"github.com/oouxx/clash/component/dialer"
+	obfs "github.com/oouxx/clash/component/simple-obfs"
+	"github.com/oouxx/clash/component/socks5"
+	v2rayObfs "github.com/oouxx/clash/component/v2ray-plugin"
+	C "github.com/oouxx/clash/constant"
 
 	"github.com/Dreamacro/go-shadowsocks2/core"
 )

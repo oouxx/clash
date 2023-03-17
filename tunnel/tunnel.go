@@ -7,14 +7,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Dreamacro/clash/adapters/inbound"
-	"github.com/Dreamacro/clash/adapters/provider"
-	"github.com/Dreamacro/clash/component/nat"
-	"github.com/Dreamacro/clash/component/resolver"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/context"
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/tunnel/statistic"
+	"github.com/oouxx/clash/adapters/inbound"
+	"github.com/oouxx/clash/adapters/provider"
+	"github.com/oouxx/clash/component/nat"
+	"github.com/oouxx/clash/component/resolver"
+	C "github.com/oouxx/clash/constant"
+	"github.com/oouxx/clash/context"
+	"github.com/oouxx/clash/log"
+	"github.com/oouxx/clash/tunnel/statistic"
 )
 
 var (

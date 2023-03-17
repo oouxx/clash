@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/Dreamacro/clash/log"
-	"github.com/Dreamacro/clash/proxy/http"
-	"github.com/Dreamacro/clash/proxy/mixed"
-	"github.com/Dreamacro/clash/proxy/redir"
-	"github.com/Dreamacro/clash/proxy/socks"
+	"github.com/oouxx/clash/log"
+	"github.com/oouxx/clash/proxy/http"
+	"github.com/oouxx/clash/proxy/mixed"
+	"github.com/oouxx/clash/proxy/redir"
+	"github.com/oouxx/clash/proxy/socks"
 )
 
 var (

@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	adapters "github.com/Dreamacro/clash/adapters/inbound"
-	"github.com/Dreamacro/clash/common/cache"
-	"github.com/Dreamacro/clash/component/auth"
-	"github.com/Dreamacro/clash/log"
-	authStore "github.com/Dreamacro/clash/proxy/auth"
-	"github.com/Dreamacro/clash/tunnel"
+	adapters "github.com/oouxx/clash/adapters/inbound"
+	"github.com/oouxx/clash/common/cache"
+	"github.com/oouxx/clash/component/auth"
+	"github.com/oouxx/clash/log"
+	authStore "github.com/oouxx/clash/proxy/auth"
+	"github.com/oouxx/clash/tunnel"
 )
 
 type HTTPListener struct {

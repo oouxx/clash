@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Dreamacro/clash/component/trie"
+	"github.com/oouxx/clash/component/trie"
 )
 
 var (

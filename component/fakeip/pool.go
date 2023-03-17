@@ -5,8 +5,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/Dreamacro/clash/common/cache"
-	"github.com/Dreamacro/clash/component/trie"
+	"github.com/oouxx/clash/common/cache"
+	"github.com/oouxx/clash/component/trie"
 )
 
 // Pool is a implementation about fake ip generator without storage

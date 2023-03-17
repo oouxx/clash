@@ -11,7 +11,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/Dreamacro/clash/component/socks5"
+	"github.com/oouxx/clash/component/socks5"
 )
 
 const (

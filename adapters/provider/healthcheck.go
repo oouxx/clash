@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/oouxx/clash/constant"
 
 	"go.uber.org/atomic"
 )

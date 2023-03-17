@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Dreamacro/clash/adapters/inbound"
-	N "github.com/Dreamacro/clash/common/net"
-	"github.com/Dreamacro/clash/common/pool"
-	"github.com/Dreamacro/clash/component/resolver"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/context"
+	"github.com/oouxx/clash/adapters/inbound"
+	N "github.com/oouxx/clash/common/net"
+	"github.com/oouxx/clash/common/pool"
+	"github.com/oouxx/clash/component/resolver"
+	C "github.com/oouxx/clash/constant"
+	"github.com/oouxx/clash/context"
 )
 
 func handleHTTP(ctx *context.HTTPContext, outbound net.Conn) {
@@ -149,7 +149,7 @@ func relay(leftConn, rightConn net.Conn) {
 	go func() {
 		buf := pool.Get(pool.RelayBufferSize)
 		// Wrapping to avoid using *net.TCPConn.(ReadFrom)
-		// See also https://github.com/Dreamacro/clash/pull/1209
+		// See also https://github.com/oouxx/clash/pull/1209
 		_, err := io.CopyBuffer(N.WriteOnlyWriter{Writer: leftConn}, N.ReadOnlyReader{Reader: rightConn}, buf)
 		pool.Put(buf)
 		leftConn.SetReadDeadline(time.Now())

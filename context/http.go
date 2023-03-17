@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/http"
 
-	C "github.com/Dreamacro/clash/constant"
+	C "github.com/oouxx/clash/constant"
 
 	"github.com/gofrs/uuid"
 )

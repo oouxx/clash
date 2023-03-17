@@ -11,8 +11,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/Dreamacro/clash/component/vmess"
 	"github.com/gofrs/uuid"
+	"github.com/oouxx/clash/component/vmess"
 	xtls "github.com/xtls/go"
 	"google.golang.org/protobuf/proto"
 )

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/context"
+	C "github.com/oouxx/clash/constant"
+	"github.com/oouxx/clash/context"
 )
 
 // NewHTTP receive normal http request and return HTTPContext

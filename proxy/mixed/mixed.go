@@ -4,12 +4,12 @@ import (
 	"net"
 	"time"
 
-	"github.com/Dreamacro/clash/common/cache"
-	"github.com/Dreamacro/clash/component/socks5"
-	"github.com/Dreamacro/clash/log"
+	"github.com/oouxx/clash/common/cache"
+	"github.com/oouxx/clash/component/socks5"
+	"github.com/oouxx/clash/log"
 
-	"github.com/Dreamacro/clash/proxy/http"
-	"github.com/Dreamacro/clash/proxy/socks"
+	"github.com/oouxx/clash/proxy/http"
+	"github.com/oouxx/clash/proxy/socks"
 )
 
 type MixedListener struct {

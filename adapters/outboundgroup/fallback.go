@@ -4,10 +4,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/Dreamacro/clash/adapters/outbound"
-	"github.com/Dreamacro/clash/adapters/provider"
-	"github.com/Dreamacro/clash/common/singledo"
-	C "github.com/Dreamacro/clash/constant"
+	"github.com/oouxx/clash/adapters/outbound"
+	"github.com/oouxx/clash/adapters/provider"
+	"github.com/oouxx/clash/common/singledo"
+	C "github.com/oouxx/clash/constant"
 )
 
 type Fallback struct {

@@ -7,9 +7,9 @@ import (
 	"os"
 	"sync"
 
-	"github.com/Dreamacro/clash/component/profile"
-	C "github.com/Dreamacro/clash/constant"
-	"github.com/Dreamacro/clash/log"
+	"github.com/oouxx/clash/component/profile"
+	C "github.com/oouxx/clash/constant"
+	"github.com/oouxx/clash/log"
 )
 
 var (
